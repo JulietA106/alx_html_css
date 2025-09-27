@@ -1,0 +1,24 @@
+/* Make <body> a flex container, stacked vertically */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make <main> a flex container, side by side */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* auto-adjusts height/width */
+}
+
+/* Article takes 2/3 of the width */
+article {
+  flex: 2;
+  overflow-y: auto; /* scrollable if content overflows */
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+  flex: 1;
+  overflow-y: auto; /* scrollable if content overflows */
+}
