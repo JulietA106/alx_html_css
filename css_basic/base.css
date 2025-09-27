@@ -1,0 +1,74 @@
+/* base.css */
+
+/* Reset some defaults */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body default font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Navigation list in header */
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Navigation links */
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Main content area */
+main {
+    margin: 20px;
+}
+
+/* Article and aside default styles */
+article {
+    margin-bottom: 20px;
+}
+
+aside {
+    background-color: #fafafa;
+    border-left: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #222;
+    margin-top: 0;
+}
+
+/* Logo class (to be used later) */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
