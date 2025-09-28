@@ -1,6 +1,6 @@
 /* ==========================
    Header
-========================== */
+========================= */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ header nav ul li a {
 
 /* ==========================
    Hero / First Section
-========================== */
+========================= */
 .hero {
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ header nav ul li a {
 
 /* ==========================
    Quotes Section
-========================== */
+========================= */
 .quotes {
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@ header nav ul li a {
 
 /* ==========================
    Videos List Section
-========================== */
+========================= */
 .videos {
     padding: 50px;
     background-color: #f5f5f5;
@@ -201,7 +201,7 @@ header nav ul li a {
 
 /* ==========================
    Membership Section
-========================== */
+========================= */
 .membership {
     padding: 50px;
     background-color: #fff;
@@ -263,8 +263,55 @@ header nav ul li a {
 }
 
 /* ==========================
+   FAQ Section
+========================= */
+.faq {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.faq-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.faq-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff6600;
+}
+
+.faq-column div.answer {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.faq-column h3:hover {
+    color: #e55a00;
+}
+
+/* ==========================
    Responsive
-========================== */
+========================= */
 @media (max-width: 768px) {
     .hero, .quotes {
         flex-direction: column;
@@ -288,6 +335,16 @@ header nav ul li a {
     }
 
     .video-card, .membership-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-column {
         width: 90%;
         margin-bottom: 20px;
     }
