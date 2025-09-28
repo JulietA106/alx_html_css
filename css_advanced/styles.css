@@ -200,6 +200,69 @@ header nav ul li a {
 }
 
 /* ==========================
+   Membership Section
+========================== */
+.membership {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.membership-card {
+    background-color: #f9f9f9;
+    padding: 25px 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.membership-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.membership-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.membership-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.membership button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.membership button:hover {
+    background-color: #e55a00;
+}
+
+/* ==========================
    Responsive
 ========================== */
 @media (max-width: 768px) {
@@ -219,12 +282,12 @@ header nav ul li a {
         max-width: 100%;
     }
 
-    .video-cards {
+    .video-cards, .membership-cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .video-card {
+    .video-card, .membership-card {
         width: 90%;
         margin-bottom: 20px;
     }
