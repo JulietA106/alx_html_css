@@ -7,14 +7,13 @@ header nav {
     align-items: center;
     padding: 20px; /* adjust according to Figma */
     background-color: #ffffff; /* Figma color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional, for subtle effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional subtle effect */
 }
 
 header nav img {
     height: 60px; /* logo height based on Figma */
 }
 
-/* Navigation links (optional if you have links) */
 header nav ul {
     display: flex;
     list-style: none;
@@ -36,56 +35,109 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px; /* adjust based on Figma */
-    gap: 40px; /* optional spacing between image and content */
+    padding: 50px;
+    gap: 40px;
 }
 
 .hero-image img {
-    max-width: 500px; /* adjust based on Figma */
+    max-width: 500px;
     height: auto;
-    border-radius: 10px; /* optional, if Figma shows rounded corners */
+    border-radius: 10px;
 }
 
 .hero-content h1 {
-    font-size: 2rem; /* adjust based on Figma */
-    color: #222; /* Figma text color */
+    font-size: 2rem;
+    color: #222;
     margin: 0;
 }
 
+.hero-content span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
 .hero-content p {
-    font-size: 1.2rem; /* adjust */
+    font-size: 1.2rem;
     margin-top: 10px;
-    color: #555; /* Figma color */
+    color: #555;
 }
 
 .hero-content button {
     margin-top: 20px;
     padding: 12px 24px;
-    background-color: #ff6600; /* Figma primary button color */
+    background-color: #ff6600;
     color: #ffffff;
     font-size: 1rem;
     border: none;
-    border-radius: 6px; /* optional, based on Figma */
+    border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .hero-content button:hover {
-    background-color: #e55a00; /* slightly darker hover */
+    background-color: #e55a00;
+}
+
+/* ==========================
+   Quotes Section
+========================== */
+.quotes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 40px; /* spacing between image and text */
+    background-color: #f9f9f9; /* Figma background color */
+}
+
+.quote-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quote-content {
+    max-width: 600px; /* prevent text from stretching too much */
+}
+
+.quote-content blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.quote-content h3 {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.quote-content p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #555;
 }
 
 /* ==========================
    Responsive
 ========================== */
 @media (max-width: 768px) {
-    .hero {
+    .hero, .quotes {
         flex-direction: column;
         text-align: center;
         padding: 30px;
     }
 
-    .hero-image img {
+    .hero-image img,
+    .quote-image img {
         max-width: 100%;
         margin-bottom: 20px;
+    }
+
+    .quote-content {
+        max-width: 100%;
     }
 }
